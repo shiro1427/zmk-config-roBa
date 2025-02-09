@@ -51,7 +51,7 @@
         };
     };
 
-    mkp_exit_AML:mkp_exit_AML{
+    mkp_exit_AML: mkp_exit_AML {
         compatible = "zmk,behavior-macro-one-param";
         #binding-cells = <1>;
         bindings = 
@@ -74,7 +74,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
+        };j
     };
 
     keymap {
