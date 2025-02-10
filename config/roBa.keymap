@@ -64,7 +64,9 @@
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&sl 4>;
-  // 一時的にレイヤー4を有効にする
+
+            // 一時的にレイヤー4を有効にする
+
             label = "MKP_EXIT_AML";
         };
     };
@@ -126,10 +128,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans             &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4           &trans             &mkp MB5           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                           &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
