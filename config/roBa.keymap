@@ -53,19 +53,19 @@
             label = "TO_LAYER_0";
         };
 
-    mkp_exit_default: mkp_exit_default {
-        compatible = "zmk,behavior-macro-one-param";
-        #binding-cells = <1>;
-        bindings = 
-            <&macro_press>,
-            <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-            <&macro_pause_for_release>,
-            <&macro_release>,
-            <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-            <&macro_tap>,
-            <&to 0>;  // クリック後にレイヤー0へ移動
-
-        label = "MKP_EXIT_DEFAULT";
+        mkp_exit_default: mkp_exit_default {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&to 0>;
+  // クリック後にレイヤー0へ移動
+            label = "MKP_EXIT_DEFAULT";
         };
     };
 
@@ -135,10 +135,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans                 &trans                 &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_default MB1  &mkp_exit_default MB3  &mkp_exit_default MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4               &trans                 &mkp MB5               &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                       &trans
             >;
         };
 
