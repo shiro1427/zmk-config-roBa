@@ -66,6 +66,7 @@
             <&to 0>;  // クリック後にレイヤー0へ移動
 
         label = "MKP_EXIT_DEFAULT";
+        };
     };
 
     behaviors {
