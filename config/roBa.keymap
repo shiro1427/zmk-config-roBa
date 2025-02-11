@@ -59,7 +59,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
@@ -68,20 +68,13 @@
 
             label = "MKP_EXIT_AML";
         };
-
-        parenthesis: parenthesis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
-            label = "parenthesis";
-        };
     };
 
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings =  <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
 
@@ -103,10 +96,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
-&kp A             &kp S         &kp D         &kp F             &kp G        &kp ESCAPE              &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &lt 4 SEMI              &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W             &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 0 P
+&kp A             &kp S             &kp D         &kp F             &kp G        &kp ESCAPE              &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &lt 4 SEMI              &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -132,21 +125,21 @@
 
         ARROW {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)                      &kp LG(LEFT_ARROW)  &kp LS(LC(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)
-&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &trans      &trans  &kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
-&kp LEFT_SHIFT      &kp LG(LC(LEFT_ARROW))  &trans          &kp LG(LC(RIGHT_ARROW))  &trans               &trans      &trans  &trans              &kp LC(LG(LEFT_ARROW))  &trans          &kp LC(LG(RIGHT_ARROW))  &trans
-&trans              &trans                  &trans          &trans                   &trans               &trans      &trans  &trans                                                                               &trans
+&kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)                      &kp LG(LEFT_ARROW)  &kp LS(LC(TAB))     &kp UP_ARROW    &kp LC(TAB)          &kp LG(RIGHT_ARROW)
+&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &trans      &trans  &kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
+&kp LEFT_SHIFT      &kp LG(LC(LEFT_ARROW))  &trans          &kp LG(LC(RIGHT_ARROW))  &trans               &trans      &trans  &trans              &kp LC(LEFT_ARROW)  &trans          &kp LC(RIGHT_ARROW)  &trans
+&trans              &trans                  &trans          &trans                   &trans               &trans      &trans  &trans                                                                       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R           &to_layer_0 T                                           &to_layer_0 Y    &to_layer_0 U      &trans             &to_layer_0 O      &mo 5
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F           &to_layer_0 G  &trans                        &kp LC(V)  &kp LC(LS(TAB))  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &kp LC(TAB)
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V           &to_layer_0 B  &trans                        &kp LC(C)  &to_layer_0 N    &mkp MB4           &kp LC(W)          &mkp MB5           &trans
-&trans         &trans         &trans         &to_layer_0 LANG_HANJA  &trans         &to_layer_0 LANG_HANGEUL      &trans     &trans                                                                    &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R        &to_layer_0 T                                      &to_layer_0 Y    &to_layer_0 U  &trans     &to_layer_0 O  &mo 5
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F        &to_layer_0 G  &trans                   &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1       &mkp MB3   &mkp MB2       &kp LC(TAB)
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V        &to_layer_0 B  &trans                   &kp LC(C)  &to_layer_0 N    &mkp MB4       &kp LC(W)  &mkp MB5       &trans
+&trans         &trans         &trans         &mkp_exit_AML LANG2  &trans         &mkp_exit_AML LANG1      &trans     &trans                                                    &trans
             >;
         };
 
