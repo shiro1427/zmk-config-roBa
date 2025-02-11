@@ -39,6 +39,11 @@
             bindings = <&none>;
             key-positions = <28 25>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 11>;
+        };
     };
 
     macros {
@@ -99,8 +104,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
-&kp A             &kp S         &kp D         &kp F             &kp G        &kp ESCAPE              &kp EQUAL      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &kp TAB                 &parenthesis   &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp A             &kp S         &kp D         &kp F             &kp G        &kp ESCAPE              &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B        &lt 4 SEMI              &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
@@ -118,10 +123,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans  &trans                              &kp F13
+&kp MINUS          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH          &kp N4        &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT N0  &kp N1        &kp N2        &kp N3        &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&trans             &trans        &trans        &trans        &trans        &trans                       &trans  &trans                              &kp F13
             >;
         };
 
