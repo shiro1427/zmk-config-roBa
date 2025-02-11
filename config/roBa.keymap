@@ -91,10 +91,10 @@
 
         NUM {
             bindings = <
-&kp MINUS       &kp N7        &kp N8        &kp N9        &kp PLUS                                                   &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET
-&kp SLASH       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp SLASH  &kp N4        &kp NUMBER_5  &kp N6        &kp RIGHT_BRACKET
-&kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp N0     &kp N1        &kp N2        &kp N3        &kp BACKSLASH
-&kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans                       &trans          &trans                                               &kp PIPE
+&kp MINUS       &kp N7        &kp N8        &kp N9        &kp PLUS                                                          &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET
+&kp SLASH       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp LEFT_PARENTHESIS   &kp SLASH  &kp N4        &kp NUMBER_5  &kp N6        &kp RIGHT_BRACKET
+&kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp RIGHT_PARENTHESIS  &kp N0     &kp N1        &kp N2        &kp N3        &kp BACKSLASH
+&kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans                       &trans                 &trans                                               &kp PIPE
             >;
         };
 
