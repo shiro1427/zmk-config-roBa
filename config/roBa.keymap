@@ -141,6 +141,8 @@
 &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V        &to_layer_0 B  &trans                   &kp LC(C)  &to_layer_0 N    &mkp MB4       &kp LC(W)  &mkp MB5       &trans
 &trans         &trans         &trans         &mkp_exit_AML LANG2  &trans         &mkp_exit_AML LANG1      &trans     &trans                                                    &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
