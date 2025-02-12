@@ -49,6 +49,11 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
         };
+
+        shiftenter {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <23 24>;
+        };
     };
 
     macros {
