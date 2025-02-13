@@ -164,7 +164,7 @@
 &trans  &trans  &trans  &trans                 &trans                                                    &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans                 &trans                 &trans                     &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans                 &trans                 &trans                     &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans  &trans  &mkp_exit_AML_LAYER 6  &mkp_exit_AML_LAYER 2  &mkp_exit_AML_LAYER 3      &trans  &trans                                &trans
+&trans  &trans  &trans  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
