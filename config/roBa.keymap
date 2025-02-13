@@ -78,6 +78,21 @@
 
             label = "MKP_EXIT_AML";
         };
+
+        mkp_exit_AML_LAYER: mkp_exit_AML_LAYER {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &to MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&sl 4>;
+
+            label = "MKP_EXIT_AML_LAYER";
+        };
     };
 
     behaviors {
@@ -106,7 +121,7 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 0 P
+&kp Q             &kp W             &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S             &kp D         &kp F             &kp G        &kp ESCAPE              &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMI
 &mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &kp SQT                 &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
@@ -146,10 +161,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R        &to_layer_0 T                                                 &to_layer_0 Y        &to_layer_0 U  &trans     &to_layer_0 O  &mo 5
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F        &to_layer_0 G  &trans                   &kp LC(V)             &kp LC(LS(TAB))      &mkp MB1       &mkp MB3   &mkp MB2       &kp LC(TAB)
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V        &to_layer_0 B  &trans                   &kp LC(C)             &to_layer_0 N        &mkp MB4       &kp LC(W)  &mkp MB5       &trans
-&trans         &trans         &trans         &mkp_exit_AML LANG2  &trans         &mkp_exit_AML LANG1      &mkp_exit_AML DELETE  &mkp_exit_AML ENTER                                           &trans
+&mkp_exit_AML Q             &mkp_exit_AML W         &mkp_exit_AML E         &mkp_exit_AML R        &mkp_exit_AML T                                                         &mkp_exit_AML Y      &mkp_exit_AML U  &trans               &mkp_exit_AML O  &mkp_exit_AML P
+&mkp_exit_AML A             &mkp_exit_AML S         &mkp_exit_AML D         &mkp_exit_AML F        &mkp_exit_AML G        &mkp_exit_AML ESC          &mkp_exit_AML MINUS   &mkp_exit_AML H      &mkp MB1         &mkp MB3             &mkp MB2         &mkp_exit_AML SEMI
+&mkp_exit_AML Z             &mkp_exit_AML X         &mkp_exit_AML C         &mkp_exit_AML V        &mkp_exit_AML B        &mkp_exit_AML SQT          &mkp_exit_AML EQUAL   &mkp_exit_AML N      &mkp MB4         &mkp_exit_AML COMMA  &mkp MB5         &mkp_exit_AML SLASH
+&mkp_exit_AML LEFT_CONTROL  &mkp_exit_AML LEFT_WIN  &mkp_exit_AML LEFT_ALT  &mkp_exit_AML_LAYER 6  &mkp_exit_AML_LAYER 2  &mkp_exit_AML_LAYER 3      &mkp_exit_AML DELETE  &mkp_exit_AML ENTER                                                         &mkp_exit_AML DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
