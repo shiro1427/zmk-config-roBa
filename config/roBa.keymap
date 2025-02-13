@@ -137,7 +137,7 @@
             bindings = <
 &kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)                      &kp LG(LEFT_ARROW)  &kp LS(LC(TAB))     &kp UP_ARROW    &kp LC(TAB)          &kp LG(RIGHT_ARROW)
 &kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &trans      &trans  &kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
-&kp LEFT_SHIFT      &kp LG(LC(LEFT_ARROW))  &trans          &kp LG(LC(RIGHT_ARROW))  &trans               &trans      &trans  &trans              &kp LC(LEFT_ARROW)  &trans          &kp LC(RIGHT_ARROW)  &trans
+&kp LEFT_SHIFT      &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT_ARROW))  &trans               &trans      &trans  &trans              &kp LC(LEFT_ARROW)  &kp LC(UP)      &kp LC(RIGHT_ARROW)  &trans
 &trans              &trans                  &trans          &trans                   &trans               &trans      &trans  &trans                                                                       &trans
             >;
 
