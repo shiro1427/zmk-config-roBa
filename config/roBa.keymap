@@ -161,10 +161,10 @@
 
         MOUSE {
             bindings = <
-&mkp_exit_AML Q             &mkp_exit_AML W         &mkp_exit_AML E         &mkp_exit_AML R        &mkp_exit_AML T                                                         &mkp_exit_AML Y      &mkp_exit_AML U  &trans               &mkp_exit_AML O  &mkp_exit_AML P
-&mkp_exit_AML A             &mkp_exit_AML S         &mkp_exit_AML D         &mkp_exit_AML F        &mkp_exit_AML G        &mkp_exit_AML ESC          &mkp_exit_AML MINUS   &mkp_exit_AML H      &mkp MB1         &mkp MB3             &mkp MB2         &mkp_exit_AML SEMI
-&mkp_exit_AML Z             &mkp_exit_AML X         &mkp_exit_AML C         &mkp_exit_AML V        &mkp_exit_AML B        &mkp_exit_AML SQT          &mkp_exit_AML EQUAL   &mkp_exit_AML N      &mkp MB4         &mkp_exit_AML COMMA  &mkp MB5         &mkp_exit_AML SLASH
-&mkp_exit_AML LEFT_CONTROL  &mkp_exit_AML LEFT_WIN  &mkp_exit_AML LEFT_ALT  &mkp_exit_AML_LAYER 6  &mkp_exit_AML_LAYER 2  &mkp_exit_AML_LAYER 3      &mkp_exit_AML DELETE  &mkp_exit_AML ENTER                                                         &mkp_exit_AML DELETE
+&mkp_exit_AML Q  &mkp_exit_AML W  &mkp_exit_AML E  &mkp_exit_AML R        &mkp_exit_AML T                                           &mkp_exit_AML Y  &mkp_exit_AML U  &trans               &mkp_exit_AML O  &mkp_exit_AML P
+&mkp_exit_AML A  &mkp_exit_AML S  &mkp_exit_AML D  &mkp_exit_AML F        &mkp_exit_AML G        &trans                     &trans  &mkp_exit_AML H  &mkp MB1         &mkp MB3             &mkp MB2         &trans
+&mkp_exit_AML Z  &mkp_exit_AML X  &mkp_exit_AML C  &mkp_exit_AML V        &mkp_exit_AML B        &trans                     &trans  &mkp_exit_AML N  &mkp MB4         &mkp_exit_AML COMMA  &mkp MB5         &trans
+&trans           &trans           &trans           &mkp_exit_AML_LAYER 6  &mkp_exit_AML_LAYER 2  &mkp_exit_AML_LAYER 3      &trans  &trans                                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
