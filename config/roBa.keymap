@@ -161,10 +161,10 @@
 
         MOUSE {
             bindings = <
-&mkp_exit_AML Q  &mkp_exit_AML W  &mkp_exit_AML E  &mkp_exit_AML R        &mkp_exit_AML T                                           &mkp_exit_AML Y  &mkp_exit_AML U  &trans               &mkp_exit_AML O  &mkp_exit_AML P
-&mkp_exit_AML A  &mkp_exit_AML S  &mkp_exit_AML D  &mkp_exit_AML F        &mkp_exit_AML G        &trans                     &trans  &mkp_exit_AML H  &mkp MB1         &mkp MB3             &mkp MB2         &trans
-&mkp_exit_AML Z  &mkp_exit_AML X  &mkp_exit_AML C  &mkp_exit_AML V        &mkp_exit_AML B        &trans                     &trans  &mkp_exit_AML N  &mkp MB4         &mkp_exit_AML COMMA  &mkp MB5         &trans
-&trans           &trans           &trans           &mkp_exit_AML_LAYER 6  &mkp_exit_AML_LAYER 2  &mkp_exit_AML_LAYER 3      &trans  &trans                                                                  &trans
+&mkp_exit_AML Q  &mkp_exit_AML W  &mkp_exit_AML E  &mkp_exit_AML R        &mkp_exit_AML T                                           &mkp_exit_AML Y  &mkp_exit_AML U  &trans    &mkp_exit_AML O  &mkp_exit_AML P
+&mkp_exit_AML A  &mkp_exit_AML S  &mkp_exit_AML D  &mkp_exit_AML F        &mkp_exit_AML G        &trans                     &trans  &mkp_exit_AML H  &mkp MB1         &mkp MB3  &mkp MB2         &trans
+&mkp_exit_AML Z  &mkp_exit_AML X  &mkp_exit_AML C  &mkp_exit_AML V        &mkp_exit_AML B        &trans                     &trans  &mkp_exit_AML N  &mkp MB4         &trans    &mkp MB5         &trans
+&trans           &trans           &trans           &mkp_exit_AML_LAYER 6  &mkp_exit_AML_LAYER 2  &mkp_exit_AML_LAYER 3      &trans  &trans                                                       &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
