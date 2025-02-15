@@ -74,6 +74,11 @@
             bindings = <&kp K_REDO>;
             key-positions = <23 35>;
         };
+
+        shiftr {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <41 40>;
+        };
     };
 
     macros {
