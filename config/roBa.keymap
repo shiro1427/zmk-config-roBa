@@ -160,10 +160,10 @@
 
         MOUSE {
             bindings = <
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0                      &trans  &trans    &trans    &trans    &trans
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &trans                 &trans                 &trans      &trans  &to 4                                 &trans
+&trans  &trans  &trans  &trans                  &trans                                                           &trans  &trans    &trans             &trans    &to_layer_0 P
+&trans  &trans  &trans  &trans                  &trans             &trans                 &trans                 &trans  &mkp MB1  &mkp MB3           &mkp MB2  &to_layer_0 SEMI
+&trans  &trans  &trans  &trans                  &trans             &trans                 &trans                 &trans  &mkp MB4  &to_layer_0 COMMA  &mkp MB5  &to_layer_0 SLASH
+&trans  &trans  &trans  &to_layer_0 LANGUAGE_2  &to_layer_0 SPACE  &to_layer_0 LANG1      &to_layer_0 BACKSPACE  &to 4                                          &to_layer_0 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
