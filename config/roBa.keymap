@@ -52,7 +52,7 @@
 
         shiftenter {
             bindings = <&kp LS(ENTER)>;
-            key-positions = <23 24>;
+            key-positions = <37 39>;
         };
     };
 
@@ -120,10 +120,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W             &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S             &kp D         &kp F             &kp G        &kp ESCAPE              &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMI
-&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V             &kp B        &kp SQT                 &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q      &kp W             &kp E         &kp R             &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A      &kp S             &kp D         &kp F             &kp G        &kp ESCAPE              &kp MINUS        &kp H        &kp J  &kp K      &kp L    &kp SEMI
+&kp Z      &kp X             &kp C         &kp V             &kp B        &kp SQT                 &kp EQUAL        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &lt 4 BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -140,10 +140,10 @@
 
         NUM {
             bindings = <
-&kp MINUS          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH          &kp N4        &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT N0  &kp N1        &kp N2        &kp N3        &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&trans             &trans        &trans        &trans        &trans        &trans                       &trans  &trans                              &kp F13
+&trans   &kp F7  &kp F8  &kp F9  &kp F10                          &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+&trans   &kp F4  &kp F5  &kp F6  &kp F11  &trans       &trans     &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&kp ESC  &kp F1  &kp F2  &kp F3  &kp F12  &kp F13      &kp EQUAL  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
+&trans   &trans  &trans  &trans  &trans   &trans       &trans     &trans                                                  &trans
             >;
         };
 
@@ -160,10 +160,10 @@
 
         MOUSE {
             bindings = <
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0                                                    &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &trans                 &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0      &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp MB1               &mkp MB3               &mkp MB2               &mkp_exit_AML_LAYER 0
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0      &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp MB4               &mkp_exit_AML_LAYER 0  &mkp MB5               &mkp_exit_AML_LAYER 0
-&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0      &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0                                                                       &mkp_exit_AML_LAYER 0
+&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0                      &trans  &trans    &trans    &trans    &trans
+&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
+&mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &mkp_exit_AML_LAYER 0  &trans                 &trans                 &trans      &trans  &to 4                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
