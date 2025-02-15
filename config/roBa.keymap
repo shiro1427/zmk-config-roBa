@@ -40,49 +40,19 @@
             key-positions = <35 34>;
         };
 
-        tolayer {
-            bindings = <&to 0>;
-            key-positions = <39 37>;
-        };
-
-        wincopy {
-            bindings = <&kp LC(C)>;
+        copy {
+            bindings = <&kp K_COPY>;
             key-positions = <23 24>;
         };
 
-        winkiritori {
-            bindings = <&kp LC(X)>;
+        cut {
+            bindings = <&kp K_CUT>;
             key-positions = <22 22 23>;
         };
 
-        winpaste {
-            bindings = <&kp LC(V)>;
+        paste {
+            bindings = <&kp K_PASTE>;
             key-positions = <24 25>;
-        };
-
-        winclip {
-            bindings = <&kp LG(V)>;
-            key-positions = <25 25 26>;
-        };
-
-        macpaste {
-            bindings = <&kp LG(V)>;
-            key-positions = <32 31>;
-        };
-
-        mackiritori {
-            bindings = <&kp LG(X)>;
-            key-positions = <29 30>;
-        };
-
-        maccopy {
-            bindings = <&kp LG(C)>;
-            key-positions = <30 31>;
-        };
-
-        macclipboard {
-            bindings = <&kp LG(LS(V))>;
-            key-positions = <32 33>;
         };
 
         winscreenshot {
@@ -93,6 +63,16 @@
         macscreenshot {
             bindings = <&kp LG(LS(NUMBER_4))>;
             key-positions = <8 9>;
+        };
+
+        undo {
+            bindings = <&kp K_UNDO>;
+            key-positions = <22 34>;
+        };
+
+        redo {
+            bindings = <&kp K_REDO>;
+            key-positions = <23 35>;
         };
     };
 
