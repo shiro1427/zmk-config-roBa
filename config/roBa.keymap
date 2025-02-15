@@ -64,6 +64,36 @@
             bindings = <&kp LG(V)>;
             key-positions = <25 25 26>;
         };
+
+        macpaste {
+            bindings = <&kp LG(V)>;
+            key-positions = <32 31>;
+        };
+
+        mackiritori {
+            bindings = <&kp LG(X)>;
+            key-positions = <29 30>;
+        };
+
+        maccopy {
+            bindings = <&kp LG(C)>;
+            key-positions = <30 31>;
+        };
+
+        macclipboard {
+            bindings = <&kp LG(LS(V))>;
+            key-positions = <32 33>;
+        };
+
+        winscreenshot {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <0 1>;
+        };
+
+        macscreenshot {
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
