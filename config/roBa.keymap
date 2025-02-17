@@ -77,7 +77,7 @@
 
         shiftr {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <41 40>;
+            key-positions = <33 32>;
         };
     };
 
