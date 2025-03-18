@@ -135,6 +135,8 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans                 &trans      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE
 &trans     &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                                         &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         NUM {
@@ -154,7 +156,7 @@
 &trans              &trans                  &trans          &trans                   &trans               &trans      &trans  &trans                                                                       &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         MOUSE {
