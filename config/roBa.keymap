@@ -53,6 +53,11 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <33 32>;
         };
+
+        altenter {
+            bindings = <&kp LA(ENTER)>;
+            key-positions = <38 41>;
+        };
     };
 
     macros {
