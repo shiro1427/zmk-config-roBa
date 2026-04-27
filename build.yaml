@@ -18,10 +18,10 @@
 #
 ---
 include:
- - board: xiao_ble/zmk
+ - board: xiao_ble/nrf52840/zmk  # 完全な指定に変更
    shield: roBa_R
    snippet: studio-rpc-usb-uart
- - board: xiao_ble/zmk
+ - board: xiao_ble/nrf52840/zmk
    shield: roBa_L
- - board: xiao_ble/zmk
+ - board: xiao_ble/nrf52840/zmk
    shield: settings_reset
