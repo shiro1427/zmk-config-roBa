@@ -38,8 +38,6 @@
     };
 };
 
-
-
 &spi0 {
     status = "okay";
     pinctrl-0 = <&spi0_default>;
