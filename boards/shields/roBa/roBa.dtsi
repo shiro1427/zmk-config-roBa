@@ -62,8 +62,8 @@
 
 
 
-            , <&key_physical_attrs 100 100  650  387 (-2000)   650   387>
-            , <&key_physical_attrs 100 100  763  350 (-1000)     0   350>
+            , <&key_physical_attrs 100 100  650  387 -2000   650   387>
+            , <&key_physical_attrs 100 100  763  350 -1000     0   350>
 
             , <&key_physical_attrs 100 100 1200  337       0     0     0>
 
@@ -99,11 +99,14 @@
         b-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <20>;
         #sensor-binding-cells = <0>;
+        #binding-cells = <0>;
         status = "disabled";
     };
 
     right_encoder: encoder_right {
+        compatible = "alps,ec11";
         #sensor-binding-cells = <0>;
+        #binding-cells = <0>;
         status = "disabled";
     };
 
