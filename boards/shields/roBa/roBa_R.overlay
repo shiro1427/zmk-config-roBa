@@ -59,8 +59,3 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
-
-&left_encoder {
-    status = "okay";
-};
-
