@@ -1,4 +1,5 @@
 #include "roBa.dtsi"
+#include <dt-bindings/input/input-event-codes.h>
 
 &default_transform {
     col-offset = <6>;
@@ -57,6 +58,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        evt-type = <INPUT_EV_REL>;
         automouse-layer = <4>;
         scroll-layers = <5>;
     };
