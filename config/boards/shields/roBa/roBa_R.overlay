@@ -19,7 +19,8 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
+        automouse-layer = <4>;
+        scroll-layers = <5>;
     };
 };
 
@@ -61,8 +62,6 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        automouse-layer = <4>;
-        scroll-layers = <5>;
     };
 };
 
