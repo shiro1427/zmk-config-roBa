@@ -17,6 +17,14 @@
 };
 
 / {
+    scroll_y_scaler: scroll_y_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_Y>;
+        track-remainders;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
@@ -24,7 +32,7 @@
 
         scroller {
             layers = <5>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
+            input-processors = <&scroll_y_scaler (-1) 1 &zip_xy_scaler 1 8 &zip_xy_to_scroll_mapper>;
         };
     };
 };
@@ -68,7 +76,6 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         cpi = <1000>;
-        invert-x;
         invert-y;
     };
 };
