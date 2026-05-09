@@ -3,7 +3,7 @@
 #include <input/processors.dtsi>
 
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <1000>;
 };
 
 &default_transform {
@@ -79,9 +79,7 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        cpi = <1000>;
+        cpi = <800>;
         invert-y;
     };
 };
-
-
